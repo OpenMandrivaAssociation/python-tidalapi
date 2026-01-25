@@ -8,14 +8,11 @@ Source0:	https://files.pythonhosted.org/packages/source/t/%{module}/%{module}-%{
 URL:		https://pypi.org/project/tidalapi/
 License:	LGPL-3.0-or-later
 Group:		Development/Python
-
-
-BuildRequires:	python%{pyver}dist(poetry)
-BuildSystem:	python
 BuildArch:	noarch
 
-Requires:	python%{pyver}dist(ratelimit)
-Requires:	python%{pyver}dist(mpegdash)
+BuildSystem:	python
+
+BuildRequires:	python%{pyver}dist(poetry)
 
 %description
 Unofficial Python API for TIDAL music streaming service.
