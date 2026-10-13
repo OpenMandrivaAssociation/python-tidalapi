@@ -12,7 +12,9 @@ BuildArch:	noarch
 
 BuildSystem:	python
 
-BuildRequires:	python%{pyver}dist(poetry)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(poetry-core)
+BuildRequires:	python%{pyver}dist(wheel)
 
 %description
 Unofficial Python API for TIDAL music streaming service.
